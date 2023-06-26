@@ -17,7 +17,7 @@ if (process.env.JAWSDB_URL) {
     // the following operation will be executed.
     // A new instance of the Sequelize class is created and assigned to the variable sequelize,
     sequelize = new Sequelize(
-        // The Sequelize constructor will call ont the following four arguments:
+        // The Sequelize constructor will call onto the following four arguments:
         process.env.DB_NAME,
         process.env.DB_USER,
         process.env.DB_PASSWORD,

@@ -1,5 +1,6 @@
 const { Blog } = require('../models');
 
+// Data for Blog table
 const blogdata = [
   {
     name: 'Server-Side',
@@ -19,6 +20,7 @@ const blogdata = [
   },
 ];
 
+// Create and insert multiple blogs using blogdata
 const seedBlog = () => Blog.bulkCreate(blogdata);
 
 module.exports = seedBlog;

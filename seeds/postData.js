@@ -1,5 +1,6 @@
 const { Post } = require('../models');
 
+// Data for Post table
 const postdata = [
   {
     title: 'Server-Side',
@@ -31,6 +32,7 @@ const postdata = [
   },
 ];
 
+// Create and insert multiple posts using postdata
 const seedPost = () => Post.bulkCreate(postdata);
 
 module.exports = seedPost;
