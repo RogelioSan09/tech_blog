@@ -7,7 +7,7 @@ const {withAuth, areAuth } = require('../utils/auth');
 // GET all blogs for homepage
 router.get('/', async (req, res) => {
   try {
-    const bdBlogData = await Blog.findAll({
+    const dbBlogData = await Blog.findAll({
       include: [
         {
           model: Post,
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
       ],
     });
 
-    const blogs = bdBlogData.map((blog) =>
+    const blogs = dbBlogData.map((blog) =>
       blog.get({ plain: true })
     );
 
